@@ -22,9 +22,6 @@ class_list = data.split("\n")
 
 
 count=0
-cy1=287
-cy2=305
-offset=6
 while True:
     ret,frame = cap.read()
     count += 1
