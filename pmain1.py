@@ -38,10 +38,7 @@ while True:
     results = model(frame)
     a = results[0].boxes.data
     px = pd.DataFrame(a).astype("float")
-    list1=[]
-    truck=[]
-    list2=[]
-    car=[]
+    
     for index, row in px.iterrows():
         x1 = int(row[0])
         y1 = int(row[1])
